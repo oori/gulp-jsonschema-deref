@@ -1,6 +1,6 @@
 {
   "name": "gulp-jsonschema-deref",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dereference and bundle json schema",
   "license": "MIT",
   "repository": "oori/gulp-jsonschema-deref",
