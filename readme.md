@@ -40,6 +40,7 @@ gulp.task('default', ['resolve-schema','watch-schema']);
 
 
 ## API
+Currently, dependant on [json-schema-ref-parser](https://github.com/BigstickCarpet/json-schema-ref-parser)
 
 ### jsonschemaDeref([options])
 
