@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Main schema",
+    "type": "object",
+
+    "allOf": [
+        { "$ref": "sub-folder/sub.schema.json" }, { "$ref": "#/definitions/test" }
+    ],
+
+    "definitions": {
+        "test": {
+            "type": "object",
+            "properties": {
+                "testField": { "$ref": "sub-folder/fragment.schema.json" },
+            },
+            "required": [ "testField" ]
+        }
+    }
+}
