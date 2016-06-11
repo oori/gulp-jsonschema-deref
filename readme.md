@@ -1,4 +1,10 @@
-# gulp-jsonschema-deref [![Build Status](https://travis-ci.org/oori/gulp-jsonschema-deref.svg?branch=master)](https://travis-ci.org/oori/gulp-jsonschema-deref)
+# gulp-jsonschema-deref
+
+[![Build Status](https://travis-ci.org/oori/gulp-jsonschema-deref.svg?branch=master)](https://travis-ci.org/oori/gulp-jsonschema-deref)
+[![Dependencies](https://david-dm.org/oori/gulp-jsonschema-deref.svg)](https://david-dm.org/oori/gulp-jsonschema-deref)
+[![Inline docs](http://inch-ci.org/github/oori/gulp-jsonschema-deref.svg?branch=master)](http://inch-ci.org/github/oori/gulp-jsonschema-deref)
+[![npm](http://img.shields.io/npm/v/gulp-jsonschema-deref.svg)](https://www.npmjs.com/package/gulp-jsonschema-deref)
+[![License](https://img.shields.io/npm/l/gulp-jsonschema-deref.svg)](LICENSE)
 
 > Gulp plugin to resolve $ref references (*local+file+http*) and bundle into a single json schema
 
