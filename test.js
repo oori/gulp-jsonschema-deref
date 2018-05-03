@@ -3,22 +3,22 @@ import fs from 'fs';
 import test from 'ava';
 import gulpUtil from 'gulp-util';
 import tv4 from 'tv4';
-import deref from './';
+import deref from '.';
 
 test.cb('Dereferenced schema validation', t => {
-	let fixturesPath = path.join(__dirname, 'fixtures/');
-	let schemaPath = path.join(fixturesPath, 'main.schema.json');
-	let testData = JSON.parse(fs.readFileSync(path.join(fixturesPath, 'main.test.json')));
+	const fixturesPath = path.join(__dirname, 'fixtures/');
+	const schemaPath = path.join(fixturesPath, 'main.schema.json');
+	const testData = JSON.parse(fs.readFileSync(path.join(fixturesPath, 'main.test.json')));
 
 	const stream = deref();
 	stream.once('data', file => {
-		let processedSchema = JSON.parse(file.contents.toString());
-		let validation = tv4.validateResult(testData, processedSchema);
+		const processedSchema = JSON.parse(file.contents.toString());
+		const validation = tv4.validateResult(testData, processedSchema);
 
 		if (validation.valid) {
 			t.pass();
 		} else {
-			t.fail(validation.error.message + " in " + validation.error.schemaPath);
+			t.fail(validation.error.message + ' in ' + validation.error.schemaPath);
 		}
 
 		t.end();
